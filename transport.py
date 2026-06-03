@@ -15,3 +15,8 @@ class Bike(Transport):
     def vehicle_type(self):
         return "Bike"
 
+    def arrival_time(self):
+        return "5 minutes"
+
+    def travel_time(self):
+        return "10 minutes"
