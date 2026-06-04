@@ -56,3 +56,4 @@ Zamiast tworzyć obiekty bezpośrednio za pomocą wywołań konkretnych klas, wz
 
 ## Przykłady działania kodu
 
+![factory_prints.jpg](cosmetics/factory_prints.jpg)
