@@ -29,7 +29,7 @@ class Customer:
         Raises:
         AttributeError: Kiedy podana usługa nie posiada metody order_transport.
         """
-        print(f"{self.name} order transport {service.transport_name()}")
+        print(f"\n{self.name} order transport {service.transport_name()}")
         return service.order_transport()
 
 
