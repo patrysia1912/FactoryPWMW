@@ -1,3 +1,5 @@
+"""Główny skrypt uruchamiający przykładowe działanie aplikacji."""
+
 from customer import Customer
 from services import BikeService, TaxiService, ScooterService
 from transport import Transport, Taxi

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="pl" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>services module &#8212; Factory by Marysia i Patrycja 1.0 - dokumentacja</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=47202671" />
+    <link rel="stylesheet" type="text/css" href="_static/haiku.css?v=fce32b03" />
+    <script src="_static/documentation_options.js?v=331e28ce"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=2827c288"></script>
+    <link rel="index" title="Indeks" href="genindex.html" />
+    <link rel="search" title="Szukaj" href="search.html" />
+    <link rel="next" title="transport module" href="transport.html" />
+    <link rel="prev" title="main module" href="main.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>Factory by Marysia i Patrycja 1.0 - dokumentacja</span></a></h1>
+        <h2 class="heading"><span>services module</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="Top">
+      
+        <p>
+        «&#160;&#160;<a href="main.html">main module</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Treść</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="transport.html">transport module</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <section id="module-services">
+<span id="services-module"></span><h1>services module<a class="headerlink" href="#module-services" title="Link to this heading">¶</a></h1>
+<p>Moduł zawierający usługi transportowe i logikę wzorca Factory Method.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="services.BikeService">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">services.</span></span><span class="sig-name descname"><span class="pre">BikeService</span></span><a class="headerlink" href="#services.BikeService" title="Link to this definition">¶</a></dt>
+<dd><p>Klasy bazowe: <a class="reference internal" href="#services.TransportServices" title="services.TransportServices"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransportServices</span></code></a></p>
+<p>Usługa obsługująca zamówienia rowerów.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="services.BikeService.create_transport">
+<span class="sig-name descname"><span class="pre">create_transport</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.BikeService.create_transport" title="Link to this definition">¶</a></dt>
+<dd><p>Tworzy instancję roweru.</p>
+<dl class="simple">
+<dt>Ags:</dt><dd><p>Brak.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Zwraca<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Obiekt roweru.</p>
+</dd>
+<dt class="field-even">Typ zwracany<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="transport.html#transport.Bike" title="transport.Bike">Bike</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="services.BikeService.transport_name">
+<span class="sig-name descname"><span class="pre">transport_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.BikeService.transport_name" title="Link to this definition">¶</a></dt>
+<dd><p>Zwraca nazwę usługi rowerowej.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Brak.</strong></p>
+</dd>
+<dt class="field-even">Zwraca<span class="colon">:</span></dt>
+<dd class="field-even"><p>Napis „Bike”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="services.ScooterService">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">services.</span></span><span class="sig-name descname"><span class="pre">ScooterService</span></span><a class="headerlink" href="#services.ScooterService" title="Link to this definition">¶</a></dt>
+<dd><p>Klasy bazowe: <a class="reference internal" href="#services.TransportServices" title="services.TransportServices"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransportServices</span></code></a></p>
+<p>Usługa obsługująca zamówienia skuterów.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="services.ScooterService.create_transport">
+<span class="sig-name descname"><span class="pre">create_transport</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.ScooterService.create_transport" title="Link to this definition">¶</a></dt>
+<dd><p>Tworzy instancję skuteru.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Brak.</strong></p>
+</dd>
+<dt class="field-even">Zwraca<span class="colon">:</span></dt>
+<dd class="field-even"><p>Obiekt skuteru.</p>
+</dd>
+<dt class="field-odd">Typ zwracany<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="transport.html#transport.Scooter" title="transport.Scooter">Scooter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="services.ScooterService.transport_name">
+<span class="sig-name descname"><span class="pre">transport_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.ScooterService.transport_name" title="Link to this definition">¶</a></dt>
+<dd><p>Zwraca nazwę usługi dla skuterów.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Brak.</strong></p>
+</dd>
+<dt class="field-even">Zwraca<span class="colon">:</span></dt>
+<dd class="field-even"><p>Napis „Scooter”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="services.TaxiService">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">services.</span></span><span class="sig-name descname"><span class="pre">TaxiService</span></span><a class="headerlink" href="#services.TaxiService" title="Link to this definition">¶</a></dt>
+<dd><p>Klasy bazowe: <a class="reference internal" href="#services.TransportServices" title="services.TransportServices"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransportServices</span></code></a></p>
+<p>Usługa obsługująca zamówienia taksówek.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="services.TaxiService.create_transport">
+<span class="sig-name descname"><span class="pre">create_transport</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.TaxiService.create_transport" title="Link to this definition">¶</a></dt>
+<dd><p>Tworzy instancję taksówki.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Brak.</strong></p>
+</dd>
+<dt class="field-even">Zwraca<span class="colon">:</span></dt>
+<dd class="field-even"><p>Obiekt taksówki.</p>
+</dd>
+<dt class="field-odd">Typ zwracany<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="transport.html#transport.Taxi" title="transport.Taxi">Taxi</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="services.TaxiService.transport_name">
+<span class="sig-name descname"><span class="pre">transport_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.TaxiService.transport_name" title="Link to this definition">¶</a></dt>
+<dd><p>Zwraca nazwę usługi taksówkarskiej.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Brak.</strong></p>
+</dd>
+<dt class="field-even">Zwraca<span class="colon">:</span></dt>
+<dd class="field-even"><p>Napis „Taxi”.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="services.TransportServices">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">services.</span></span><span class="sig-name descname"><span class="pre">TransportServices</span></span><a class="headerlink" href="#services.TransportServices" title="Link to this definition">¶</a></dt>
+<dd><p>Klasy bazowe: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Abstrakcyjna klasa bazowa zarządzająca usługami transportowymi.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="services.TransportServices.create_transport">
+<span class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">create_transport</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.TransportServices.create_transport" title="Link to this definition">¶</a></dt>
+<dd><p>Tworzy obiekt transportu. Metoda abstrakcyjna klasy TransportServices.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Brak.</strong></p>
+</dd>
+<dt class="field-even">Zwraca<span class="colon">:</span></dt>
+<dd class="field-even"><p>Nowy obiekt pojazdu.</p>
+</dd>
+<dt class="field-odd">Typ zwracany<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="transport.html#transport.Transport" title="transport.Transport">Transport</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="services.TransportServices.order_transport">
+<span class="sig-name descname"><span class="pre">order_transport</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.TransportServices.order_transport" title="Link to this definition">¶</a></dt>
+<dd><p>Obsługuje proces zamówienia pojazdu i zmienia jego dostępność.
+Wyświetla komunikaty o tym informujące.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Brak.</strong></p>
+</dd>
+<dt class="field-even">Zwraca<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="services.TransportServices.transport_name">
+<span class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">transport_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#services.TransportServices.transport_name" title="Link to this definition">¶</a></dt>
+<dd><p>Zwraca nazwę usługi.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Brak.</strong></p>
+</dd>
+<dt class="field-even">Zwraca<span class="colon">:</span></dt>
+<dd class="field-even"><p>Nazwa usługi.</p>
+</dd>
+<dt class="field-odd">Typ zwracany<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="Bottom">
+      
+        <p>
+        «&#160;&#160;<a href="main.html">main module</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Treść</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="transport.html">transport module</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2026, Patrycja i Marysia.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    </div>
+  </body>
+</html>
